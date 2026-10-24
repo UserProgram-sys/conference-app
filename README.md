@@ -1,4 +1,4 @@
-# Real-Time Conference Application (ISE_F25_NAP_C1)
+# Real-Time Conference Application (ISE_F25_NAP)
 
 .NET 8 / C# conference system: **TCP text chat** + **UDP audio/video** relayed by a multithreaded server.
 
@@ -39,12 +39,18 @@ Open firewall for TCP 5000 and UDP 5001 on the server.
 ## Third-party packages
 NAudio 2.2.1, OpenCvSharp4 4.9.0 (+ `OpenCvSharp4.runtime.win`).
 
-## Team contributions
-| Member | Contribution |
-|---|---|
-| Member 1 | ... |
-| Member 2 | ... |
-| Member 3 | ... |
+## Team members & contributions
+Course: Network Application Programming (ISE_F25_NAP_C1) – Syrian Virtual University
+
+| Member | Student ID | Contribution |
+|---|---|---|
+| Ahmad Fouad Sate' (احمد فؤاد ساطع) | ahmadfouad_13781 | Server: room management (`RoomManager`, `Room`, `ClientSession`) |
+| George Kabrsli (جورج قبرصلي) | George_89266 | Server: TCP chat server (`TcpChatServer`), command protocol |
+| Mohammad Ghaleb Nasri (محمد غالب نصري) | Mhd.ghaleb_28497 | Server: UDP media relay (`UdpMediaRelay`), shared packet format, multithreading |
+| Yasen Alalabi (ياسين العلبي) | Yasen_96832 | Client: console UI, `ChatClient` (TCP), audio capture/playback (NAudio) |
+| Khaled Arar (خالد عرار) | Khaled_84196 | Client: video capture/fragmentation/display (OpenCvSharp), testing, README/CHANGELOG |
+
+> Update this table to match what each member actually did (see the commit history).
 
 ## Testing
 `tests/server_integration_test.py` (Python 3, no dependencies) drives a running server with raw TCP/UDP sockets and checks:
